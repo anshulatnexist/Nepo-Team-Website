@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Nepo Team | Elite Australian Accounting & KPO Hub</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            bg: '#0B0F19',
+                            card: '#111827',
+                            border: '#1F2937',
+                            blue: '#1E88E5',
+                            cyan: '#00D2FE',
+                            text: '#F3F4F6',
+                            muted: '#9CA3AF'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-brand-bg text-brand-text font-sans antialiased selection:bg-brand-cyan selection:text-brand-bg">
+
+    <!-- Header / Navigation -->
+    <header class="sticky top-0 z-50 bg-brand-bg/90 backdrop-blur-md border-b border-brand-border">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            
+            <!-- Brand Logo Vector -->
+            <a href="#" class="flex items-center gap-3">
+                <div class="flex flex-col items-center">
+                    <span class="text-[9px] font-black tracking-[0.3em] text-brand-cyan uppercase leading-none mb-1">THE</span>
+                    <div class="flex items-center gap-1 font-extrabold text-xl tracking-wider text-white">
+                        <span>NEP</span>
+                        <!-- Custom Spiral 'O' Emblem -->
+                        <svg class="w-5 h-5 text-brand-cyan" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 2A10 10 0 1 0 22 12A10 10 0 0 0 12 2Z" opacity="0.3"/>
+                            <path d="M16 8C14 6 10 6 8 9C6 12 7 16 10 17C13 18 17 16 17 12C17 10 15.5 8.5 13.5 8.5C11.5 8.5 10 10 10 12" stroke-linecap="round"/>
+                        </svg>
+                        <span>TEAM</span>
+                        <!-- Sweeping M Tail -->
+                        <span class="text-brand-cyan text-xs font-black -ml-1 transform translate-y-[-2px]">↗</span>
+                    </div>
+                </div>
+            </a>
+
+            <nav class="hidden md:flex items-center gap-8 font-medium text-brand-muted">
+                <a href="#about" class="hover:text-brand-cyan transition">About Us</a>
+                <a href="#values" class="hover:text-brand-cyan transition">Our Values</a>
+                <a href="#services" class="hover:text-brand-cyan transition">Services</a>
+                <a href="#compliance" class="hover:text-brand-cyan transition">Compliance</a>
+            </nav>
+            <a href="#contact" class="bg-gradient-to-r from-brand-blue to-brand-cyan text-brand-bg font-bold px-5 py-2.5 rounded-xl hover:opacity-95 transition shadow-lg shadow-brand-cyan/10 text-sm">
+                Get in Touch
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative py-24 md:py-32 overflow-hidden border-b border-brand-border">
+        <div class="absolute inset-0 opacity-20 bg-[radial-gradient(#00D2FE_1px,transparent_1px)] [background-size:24px_24px]"></div>
+        <div class="max-w-7xl mx-auto px-6 relative z-10">
+            <div class="max-w-3xl">
+                <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-brand-cyan/10 border border-brand-cyan/20 text-brand-cyan text-xs font-bold uppercase tracking-wider mb-6">
+                    🇦🇺 The Aussie Workplace in India 🇮🇳
+                </div>
+                <h1 class="text-4xl md:text-6xl font-extrabold text-white tracking-tight leading-tight mb-6">
+                    Elite Knowledge Process Outsourcing for <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-blue to-brand-cyan">Australian Accounting</span>.
+                </h1>
+                <p class="text-lg md:text-xl text-brand-muted leading-relaxed mb-10">
+                    The Nepo Team operates an exclusive, high-performance finance and accounting delivery hub in Noida, bridging global standards with top-tier Indian talent.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="#contact" class="bg-gradient-to-r from-brand-blue to-brand-cyan text-brand-bg font-bold px-7 py-3.5 rounded-xl hover:opacity-95 transition text-center shadow-lg shadow-brand-cyan/20">
+                        Partner With Us
+                    </a>
+                    <a href="#services" class="border border-brand-border bg-brand-card hover:bg-slate-800 text-white font-semibold px-7 py-3.5 rounded-xl transition text-center">
+                        Explore Our Capabilities
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-brand-bg border-b border-brand-border">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl font-extrabold text-white mb-6 tracking-tight">
+                        Built Differently. Managed Locally. Operating Globally.
+                    </h2>
+                    <p class="text-brand-muted mb-4 leading-relaxed">
+                        The Nepo Team is an elite offshore KPO center dedicated specifically to Australian accounting practices, SMBs, and financial platforms.
+                    </p>
+                    <p class="text-brand-muted leading-relaxed mb-6">
+                        We reject standard factory-floor BPO models. Instead, we cultivate an authentic Australian workplace culture in India—prioritizing work-life balance, high technical literacy, clear communication, and uncompromised compliance.
+                    </p>
+                    <div class="grid grid-cols-2 gap-4 border-t border-brand-border pt-6">
+                        <div>
+                            <span class="block text-3xl font-extrabold text-brand-cyan">100%</span>
+                            <span class="text-sm font-medium text-brand-muted">Cloud-Native Workflows</span>
+                        </div>
+                        <div>
+                            <span class="block text-3xl font-extrabold text-brand-cyan">Australian</span>
+                            <span class="text-sm font-medium text-brand-muted">Compliance Focused</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-brand-card rounded-3xl p-8 border border-brand-border shadow-2xl">
+                    <h3 class="text-xl font-bold text-white mb-6">Why Australia Trusts Our Floor</h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-start gap-3">
+                            <span class="p-1 rounded bg-brand-cyan/10 text-brand-cyan font-bold text-xs mt-1">✓</span>
+                            <span class="text-slate-300 font-medium">Deep expertise in Xero, Hubdoc, Dext, and Australian tax cycles.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="p-1 rounded bg-brand-cyan/10 text-brand-cyan font-bold text-xs mt-1">✓</span>
+                            <span class="text-slate-300 font-medium">Enterprise-grade endpoint security & BitLocker-encrypted devices.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="p-1 rounded bg-brand-cyan/10 text-brand-cyan font-bold text-xs mt-1">✓</span>
+                            <span class="text-slate-300 font-medium">Direct alignment with AEST/AEDT operational working hours.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Values Section -->
+    <section id="values" class="py-20 bg-brand-bg">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="text-3xl font-extrabold text-white tracking-tight mb-4">Our Key Core Values</h2>
+                <p class="text-brand-muted">Bringing the relaxed clarity, high integrity, and direct communication of Australian workplace culture to high-performance teams in India.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-brand-card p-8 rounded-2xl border border-brand-border hover:border-brand-cyan/40 transition">
+                    <div class="w-12 h-12 bg-brand-cyan/10 text-brand-cyan rounded-xl flex items-center justify-center font-bold text-xl mb-6">
+                        🦘
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Aussie Workplace Ethos</h3>
+                    <p class="text-brand-muted text-sm leading-relaxed">
+                        Flat hierarchies, open communication, and absolute respect for people. We foster an egalitarian environment where every team member is empowered to solve problems directly.
+                    </p>
+                </div>
+                <div class="bg-brand-card p-8 rounded-2xl border border-brand-border hover:border-brand-cyan/40 transition">
+                    <div class="w-12 h-12 bg-brand-cyan/10 text-brand-cyan rounded-xl flex items-center justify-center font-bold text-xl mb-6">
+                        🎯
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Uncompromising Precision</h3>
+                    <p class="text-brand-muted text-sm leading-relaxed">
+                        Financial data requires zero margin for error. We combine multi-tier quality checks with ongoing training on Australian bookkeeping standards.
+                    </p>
+                </div>
+                <div class="bg-brand-card p-8 rounded-2xl border border-brand-border hover:border-brand-cyan/40 transition">
+                    <div class="w-12 h-12 bg-brand-cyan/10 text-brand-cyan rounded-xl flex items-center justify-center font-bold text-xl mb-6">
+                        🔒
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Data Integrity & Trust</h3>
+                    <p class="text-brand-muted text-sm leading-relaxed">
+                        Strict alignment with international cybersecurity frameworks, encrypted hardware infrastructure, and robust data protection controls at rest and in transit.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-brand-bg border-y border-brand-border">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="text-3xl font-extrabold text-white tracking-tight mb-4">Core Operational Services</h2>
+                <p class="text-brand-muted">Tailored, scalable KPO solutions designed to integrate seamlessly into modern financial practices.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="p-8 rounded-2xl bg-brand-card border border-brand-border">
+                    <h3 class="text-xl font-bold text-white mb-2">Australian Bookkeeping & Accounting</h3>
+                    <p class="text-brand-muted text-sm mb-6 leading-relaxed">End-to-end management of accounts payable/receivable, bank reconciliations, and financial ledger maintenance tailored to AU compliance cycles.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-brand-bg border border-brand-border text-xs font-semibold rounded-md text-brand-cyan">Xero Management</span>
+                        <span class="px-3 py-1 bg-brand-bg border border-brand-border text-xs font-semibold rounded-md text-brand-cyan">BAS / IAS Support</span>
+                        <span class="px-3 py-1 bg-brand-bg border border-brand-border text-xs font-semibold rounded-md text-brand-cyan">Payroll Processing</span>
+                    </div>
+                </div>
+
+                <div class="p-8 rounded-2xl bg-brand-card border border-brand-border">
+                    <h3 class="text-xl font-bold text-white mb-2">Cloud Operations & Systems Integration</h3>
+                    <p class="text-brand-muted text-sm mb-6 leading-relaxed">Optimizing SaaS stacks, integrating financial workflows, and managing automated document ingestion pipelines for high efficiency.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-brand-bg border border-brand-border text-xs font-semibold rounded-md text-brand-cyan">Hubdoc & Dext</span>
+                        <span class="px-3 py-1 bg-brand-bg border border-brand-border text-xs font-semibold rounded-md text-brand-cyan">SaaS Integrations</span>
+                        <span class="px-3 py-1 bg-brand-bg border border-brand-border text-xs font-semibold rounded-md text-brand-cyan">Workflow Automation</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Security & Compliance Section -->
+    <section id="compliance" class="py-20 bg-brand-card border-b border-brand-border">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl font-extrabold text-white mb-6 tracking-tight">
+                        Enterprise-Grade Infrastructure & Risk Security
+                    </h2>
+                    <p class="text-brand-muted text-sm leading-relaxed mb-6">
+                        We invest heavily in business continuity, secure hardware protocols, and strict identity control—making us a low-risk, resilient financial delivery hub.
+                    </p>
+                    <div class="space-y-3">
+                        <div class="flex items-center gap-3">
+                            <span class="w-2 h-2 rounded-full bg-brand-cyan"></span>
+                            <span class="text-sm font-medium text-slate-200">BitLocker-encrypted hardware drives (AES-256)</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <span class="w-2 h-2 rounded-full bg-brand-cyan"></span>
+                            <span class="text-sm font-medium text-slate-200">Centralized Google Workspace Endpoint Management</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <span class="w-2 h-2 rounded-full bg-brand-cyan"></span>
+                            <span class="text-sm font-medium text-slate-200">Strict network isolation & physical security management</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-brand-bg border border-brand-border p-8 rounded-2xl">
+                    <h3 class="text-lg font-bold text-white mb-4">Corporate Summary for Financial Partners</h3>
+                    <div class="space-y-4 text-sm text-brand-muted">
+                        <div class="flex justify-between pb-2 border-b border-brand-border">
+                            <span>Company Name</span>
+                            <span class="font-semibold text-white">The Nepo Team</span>
+                        </div>
+                        <div class="flex justify-between pb-2 border-b border-brand-border">
+                            <span>Primary Delivery Center</span>
+                            <span class="font-semibold text-white">Noida, NCR, India</span>
+                        </div>
+                        <div class="flex justify-between pb-2 border-b border-brand-border">
+                            <span>Core Market Focus</span>
+                            <span class="font-semibold text-white">Australia (AU Accounting & KPO)</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span>Operational Model</span>
+                            <span class="font-semibold text-white">Dedicated Managed Seats</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact / Footer Section -->
+    <footer id="contact" class="bg-brand-bg py-16">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-12 mb-12">
+                <div>
+                    <!-- Footer Logo Vector -->
+                    <div class="flex flex-col items-start mb-4">
+                        <span class="text-[9px] font-black tracking-[0.3em] text-brand-cyan uppercase leading-none mb-1">THE</span>
+                        <div class="flex items-center gap-1 font-extrabold text-2xl tracking-wider text-white">
+                            <span>NEP</span>
+                            <svg class="w-6 h-6 text-brand-cyan" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 2A10 10 0 1 0 22 12A10 10 0 0 0 12 2Z" opacity="0.3"/>
+                                <path d="M16 8C14 6 10 6 8 9C6 12 7 16 10 17C13 18 17 16 17 12C17 10 15.5 8.5 13.5 8.5C11.5 8.5 10 10 10 12" stroke-linecap="round"/>
+                            </svg>
+                            <span>TEAM</span>
+                            <span class="text-brand-cyan text-sm font-black -ml-1 transform translate-y-[-2px]">↗</span>
+                        </div>
+                    </div>
+                    <p class="text-brand-muted text-sm max-w-sm leading-relaxed">
+                        An elite Australian accounting & financial process outsourcing hub based in Noida, India.
+                    </p>
+                </div>
+                <div>
+                    <h3 class="text-xs font-bold text-brand-cyan uppercase tracking-wider mb-4">Direct Contact</h3>
+                    <div class="space-y-3 text-sm">
+                        <p class="flex items-center gap-3 text-brand-muted">
+                            <span class="font-semibold text-white">Phone:</span>
+                            <a href="tel:+919205702289" class="hover:text-brand-cyan transition">+91 92057 02289</a>
+                        </p>
+                        <p class="flex items-center gap-3 text-brand-muted">
+                            <span class="font-semibold text-white">Email:</span>
+                            <a href="mailto:hello@thenepoteam.com" class="hover:text-brand-cyan transition">hello@thenepoteam.com</a>
+                        </p>
+                        <p class="flex items-center gap-3 text-brand-muted">
+                            <span class="font-semibold text-white">Location:</span>
+                            <span>Noida, Uttar Pradesh, India</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="pt-8 border-t border-brand-border flex flex-col sm:flex-row justify-between items-center text-xs text-brand-muted gap-4">
+                <p>&copy; The Nepo Team. All rights reserved.</p>
+                <p>Designed for Australian Practice Alignment & Enterprise Compliance.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
